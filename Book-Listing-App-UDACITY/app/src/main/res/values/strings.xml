@@ -1,0 +1,7 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Book Listing GOOGLE</string>
+    <string name="unknown_author">by Unknown</string>
+    <string name="authors">by <xliff:g id="name">%s</xliff:g></string>
+    <string name="no_book_provided">No Book Provided. Please Enter a Name.</string>
+    <string name="no_active_network">No network was found. Please check your connection.</string>
+</resources>
