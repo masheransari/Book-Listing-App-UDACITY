@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:id="@+id/book_picture"
+        android:layout_gravity="center"/>
+
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/book_title"
+    android:layout_marginBottom="2dp"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:textColor="@color/textColorMainText"
+    android:textSize="16sp"
+    tools:text="Harry Potter &amp; the prisoner of Something"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/book_publisher"
+    android:ellipsize="end"
+    android:fontFamily="sans-serif-medium"
+    tools:text="Publisher : Pottermore"
+    android:textColor="@color/textColorSecondaryText"
+    android:textSize="12sp"
+    android:scrollHorizontally="false"
+    />
+<TextView
+    android:id="@+id/book_author"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:fontFamily="sans-serif-medium"
+    android:scrollHorizontally="false"
+    android:textColor="@color/textColorSecondaryText"
+    android:textSize="12sp"
+    tools:text="Author: J. K. Rowling"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+    <RatingBar
+        android:id="@+id/book_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:numStars="5"
+        android:maxWidth="48dp"
+        android:minWidth="48dp"
+        android:isIndicator="true"
+        style="@style/RatingBar"
+        />
+    <TextView
+        android:id="@+id/book_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="4"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical|end"
+        android:scrollHorizontally="false"
+        android:textColor="@color/textColorTertiaryText"
+        android:textSize="12sp"
+        tools:text="Juvenile Thriller"
+        />
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_margin="16dp"-->
+    <!--&gt;-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:id="@+id/book_picture"-->
+        <!--android:layout_height="match_parent" />-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="3"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--&gt;-->
+    <!--<TextView-->
+        <!--android:id="@+id/book_title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="2dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:maxLines="2"-->
+        <!--android:textColor="@color/textColorMainText"-->
+        <!--android:textSize="16sp"-->
+        <!--tools:text="Harry Potter &amp; the prisoner of of something"-->
+        <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/book_published"-->
+            <!--android:ellipsize="end"-->
+            <!--android:fontFamily="sans-serif-medium"-->
+            <!--android:scrollHorizontally="false"-->
+            <!--android:textColor="@color/textColorSecondaryText"-->
+            <!--android:textSize="12sp"-->
+            <!--tools:text="Publisher: pottermore"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/book_author"-->
+            <!--android:ellipsize="end"-->
+            <!--android:fontFamily="sans-serif-medium"-->
+            <!--android:scrollHorizontally="false"-->
+            <!--android:textColor="@color/textColorSecondaryText"-->
+            <!--android:textSize="12sp"-->
+            <!--tools:text="Author: J. K.Rowling"/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp">-->
+            <!--<RatingBar-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_gravity="start"-->
+                <!--style="@style/RatingBar"-->
+                <!--android:numStars="5"-->
+                <!--android:id="@+id/book_rating"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/book_catagory"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="4"-->
+            <!--android:layout_marginLeft="16dp"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:fontFamily="sans-serif-medium"-->
+            <!--android:gravity="center_vertical|end"-->
+            <!--android:scrollHorizontally="false"-->
+            <!--android:textSize="12sp"-->
+            <!--tools:text="Juvneile Thriller"/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->
